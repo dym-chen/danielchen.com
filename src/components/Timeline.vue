@@ -1,5 +1,5 @@
 <template>
-  <Timeline :value="experiences" class="timeline" layout="vertical" align="left">
+  <Timeline :value="experiences" class="timeline" layout="vertical" align="right">
     <template #content="slotProps">
       <div class="p-timeline-event-content">
         <h3>

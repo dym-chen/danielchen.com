@@ -1,10 +1,11 @@
 <script setup>
 import Timeline from "./components/Timeline.vue";
+import profileImage from './assets/picture.jpg';
 </script>
 
 <template>
   <div class="container">
-    <header class="header">
+    <header>
       <nav class="nav">
         <a href="#" class="nav-logo">Daniel</a>
         <ul class="nav-links">
@@ -12,14 +13,26 @@ import Timeline from "./components/Timeline.vue";
           <li><a href="#">Now</a></li>
           <li><a href="#">About</a></li>
         </ul>
-      </nav>
+      </nav> 
     </header>
     <main class="main-content">
-      <h1>
-        <strong>Daniel</strong> makes visual essays about programming, design.
-      </h1>
-      <p class="subtitle"> developer... thats it</p>
-
+      <div class="horiz">
+        <div>
+          <p>ABOUT</p>
+          <h1>Daniel Chen</h1>
+          <h2>a junior developer... thats it</h2>
+        </div>
+        <div class="circle-container">
+          <img :src="profileImage" alt="Profile" />
+        </div>
+      </div>
+      <div class="horiz">
+        <div>
+          <p>EXPERIENCE</p>
+          <h2>My Journey</h2>
+          <p>Here are some of the places I've worked at and what I did there.</p>
+        </div>
+      </div>
       <Timeline />
     </main>
     <footer class="footer">
@@ -34,29 +47,20 @@ import Timeline from "./components/Timeline.vue";
 </template>
 
 <style scoped>
+
   .container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #fff;
     color: #213547;
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  }
-  .header {
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    padding: 0.5rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 10;
   }
   .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
+    max-width: 70%;
+    margin: 1em auto;
   }
   .nav-logo {
     font-weight: bold;
@@ -73,13 +77,6 @@ import Timeline from "./components/Timeline.vue";
     margin: 0;
     padding: 0;
   }
-  .nav-links a {
-    color: #646cff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: color 0.2s;
-  }
   .nav-links a:hover {
     color: #535bf2;
   }
@@ -87,23 +84,26 @@ import Timeline from "./components/Timeline.vue";
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 3rem 1rem 0 1rem;
-    max-width: 700px;
+    max-width: 60%;
     margin: 0 auto;
-    text-align: center;
+    gap: 2rem;
   }
-  .main-content h1 {
-    font-size: 2.2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+  .circle-container {
+    width: 250px;         /* or any size */
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin: auto 0 auto 1rem;
   }
-  .subtitle {
-    font-size: 1.2rem;
-    color: #666;
-    margin-top: 1rem;
+
+  .circle-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
+
   .footer {
     border-top: 1px solid #eee;
     background: #fafbfc;
@@ -125,8 +125,5 @@ import Timeline from "./components/Timeline.vue";
     color: #888;
     text-decoration: none;
     transition: color 0.2s;
-  }
-  .footer-links a:hover {
-    color: #646cff;
   }
 </style>
