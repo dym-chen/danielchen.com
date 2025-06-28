@@ -7,9 +7,8 @@ import profileImage from './assets/picture.jpg';
   <div class="container">
     <header>
       <nav class="nav">
-        <a href="#" class="nav-logo">Daniel</a>
         <ul class="nav-links">
-          <li><a href="#">My Corner</a></li>
+          <li><a href="https://drive.google.com/drive/folders/18QVK33-DUh6QE_N2nce1e0WQFc5651a8?usp=sharing">My Corner</a></li>
           <li><a href="#">Now</a></li>
           <li><a href="#">About</a></li>
         </ul>
@@ -26,14 +25,42 @@ import profileImage from './assets/picture.jpg';
           <img :src="profileImage" alt="Profile" />
         </div>
       </div>
-      <div class="horiz">
-        <div>
-          <p>EXPERIENCE</p>
-          <h2>My Journey</h2>
-          <p>Here are some of the places I've worked at and what I did there.</p>
-        </div>
+      <div>
+        <p>ABOUT ME</p>
+        <h2>Who am I?</h2>
+        <p>
+          Hello! I'm currently a computer engineering student at the University of Waterloo, aspiring to be one day as good of a dev as you reading this right now. 
+          I am currently in a school term and am searching for a co-op position for the winter and summer of 2026.
+          <br/><br/>
+          I have a passion for problem solving and bringing ideas to life. There are lots of things I want to accomplish, 
+          so I will take it one step at a time. As a result, n this site, I will share what I am working 
+          on and try to document as much of it as possible for 3 reasons:
+        </p>
+        <ol>
+          <li>
+            I hope that the content can give you an idea of who I am and how do I think and work.
+          </li>
+          <li>
+            I want to track my progress and see how I have grown over time, both as a person and as a developer.
+          </li>
+          <li>
+            I just want somewhere to write sometimes, its pretty therapeutic 😊
+          </li>
+        </ol> 
+        <p>
+          To follow along with my journey, you can check out my <a href="https://github.com/dym-chen">Github</a>, message me on <a href="https://www.linkedin.com/in/daniel-chen-940180177/">LinkedIn</a>,
+          or get in touch with me through email, dychen@uwaterloo.ca.
+        </p>
       </div>
       <Timeline />
+      <div>
+          <p>POSTS</p>
+          <h2>Whats going on with me now?</h2>
+          <p>
+            Since I will use this website as a place to learn about Vue.JS and sharpen my front-end skills, there will be some time till I have the blog functionality available.
+            In the meanwhile, please check out my posts <a href="https://drive.google.com/drive/folders/18QVK33-DUh6QE_N2nce1e0WQFc5651a8?usp=sharing ">here</a> (I promise its nothing malicious, just a google drive link).
+          </p>      
+      </div>
     </main>
     <footer class="footer">
       <div>© 2025 Daniel Chen</div>
@@ -77,15 +104,25 @@ import profileImage from './assets/picture.jpg';
     margin: 0;
     padding: 0;
   }
-  .nav-links a:hover {
-    color: #535bf2;
+  .nav-links a {
+    color: #464646;
+    transition: 0.1s;
   }
+  .nav-links a:hover {
+    color: #7c7c7c;
+  }
+  @media (max-width: 1000px) {
+    body .main-content {
+      width: 80%;
+    }
+  }
+
   .main-content {
     flex: 1;
     display: flex;
     flex-direction: column;
     padding: 3rem 1rem 0 1rem;
-    max-width: 60%;
+    width: 900px;
     margin: 0 auto;
     gap: 2rem;
   }
