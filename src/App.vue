@@ -1,100 +1,28 @@
+<!-- App.vue -->
 <script setup>
-import Timeline from "./components/Timeline.vue";
-import profileImage from './assets/picture.jpg';
 </script>
 
 <template>
-  <div class="container">
-    <header>
-      <nav class="nav">
-        <ul class="nav-links">
-          <li><a href="https://drive.google.com/drive/folders/18QVK33-DUh6QE_N2nce1e0WQFc5651a8?usp=sharing">My Corner</a></li>
-          <li><a href="#">Now</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav> 
-    </header>
-    <main class="main-content">
-      <div class="horiz">
-        <div>
-          <p>ABOUT</p>
-          <h1>Daniel Chen</h1>
-          <h2>a junior developer... thats it</h2>
-        </div>
-        <div class="circle-container">
-          <img :src="profileImage" alt="Profile" />
-        </div>
-      </div>
-      <div>
-        <p>ABOUT ME</p>
-        <h2>Who am I?</h2>
-        <p>
-          Hello! I'm currently a computer engineering student at the University of Waterloo, aspiring to be one day as good of a dev as you reading this right now. 
-          I am currently in a school term and am searching for a co-op position for the winter and summer of 2026.
-          <br/><br/>
-          I have a passion for problem solving and bringing ideas to life. There are lots of things I want to accomplish, 
-          so I will take it one step at a time. As a result, n this site, I will share what I am working 
-          on and try to document as much of it as possible for 3 reasons:
-        </p>
-        <ol>
-          <li>
-            I hope that the content can give you an idea of who I am and how do I think and work.
-          </li>
-          <li>
-            I want to track my progress and see how I have grown over time, both as a person and as a developer.
-          </li>
-          <li>
-            I just want somewhere to write sometimes, its pretty therapeutic 😊
-          </li>
-        </ol> 
-        <p>
-          To follow along with my journey, you can check out my <a href="https://github.com/dym-chen">Github</a>, message me on <a href="https://www.linkedin.com/in/daniel-chen-940180177/">LinkedIn</a>,
-          or get in touch with me through email, dychen@uwaterloo.ca.
-        </p>
-      </div>
-      <Timeline />
-      <div>
-          <p>POSTS</p>
-          <h2>Whats going on with me now?</h2>
-          <p>
-            Since I will use this website as a place to learn about Vue.JS and sharpen my front-end skills, there will be some time till I have the blog functionality available.
-            In the meanwhile, please check out my posts <a href="https://drive.google.com/drive/folders/18QVK33-DUh6QE_N2nce1e0WQFc5651a8?usp=sharing ">here</a> (I promise its nothing malicious, just a google drive link).
-          </p>      
-      </div>
-    </main>
-    <footer class="footer">
-      <div>© 2025 Daniel Chen</div>
-      <ul class="footer-links">
-        <li><a href="#">My Corner</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Now</a></li>
+  <div id="app">
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><router-link to="/">About</router-link></li>
+        <li><a href="https://drive.google.com/drive/folders/18QVK33-DUh6QE_N2nce1e0WQFc5651a8?usp=sharing">My Corner</a></li>
+        <li><router-link to="/project">Projects</router-link></li>
       </ul>
-    </footer>
+    </nav>
+
+    <router-view />
   </div>
 </template>
 
-<style scoped>
-
-  .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    color: #213547;
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  }
+<style setup>
   .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 70%;
     margin: 1em auto;
-  }
-  .nav-logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #222;
-    text-decoration: none;
-    letter-spacing: 0.5px;
   }
   .nav-links {
     list-style: none;
@@ -110,57 +38,5 @@ import profileImage from './assets/picture.jpg';
   }
   .nav-links a:hover {
     color: #7c7c7c;
-  }
-  @media (max-width: 1000px) {
-    body .main-content {
-      width: 80%;
-    }
-  }
-
-  .main-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 3rem 1rem 0 1rem;
-    width: 900px;
-    margin: 0 auto;
-    gap: 2rem;
-  }
-  .circle-container {
-    width: 250px;         /* or any size */
-    height: 250px;
-    border-radius: 50%;
-    overflow: hidden;
-    display: inline-block;
-    margin: auto 0 auto 1rem;
-  }
-
-  .circle-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .footer {
-    border-top: 1px solid #eee;
-    background: #fafbfc;
-    padding: 1.2rem 0 0.5rem 0;
-    margin-top: 2rem;
-    text-align: center;
-  }
-  .footer-links {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.2rem;
-    margin: 0.5rem 0 0 0;
-    padding: 0;
-    font-size: 0.95rem;
-  }
-  .footer-links a {
-    color: #888;
-    text-decoration: none;
-    transition: color 0.2s;
   }
 </style>
