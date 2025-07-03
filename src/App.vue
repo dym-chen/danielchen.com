@@ -13,6 +13,15 @@
     </nav>
 
     <router-view />
+
+    <footer class="footer">
+      <div style="color: #888;">© 2025 Daniel Chen</div>
+      <ul class="footer-links">
+        <li><a href="#">My Corner</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Now</a></li>
+      </ul>
+    </footer>
   </div>
 </template>
 
@@ -38,5 +47,28 @@
   }
   .nav-links a:hover {
     color: #7c7c7c;
+  }
+
+  .footer {
+    border-top: 1px solid #eee;
+    background: #fafbfc;
+    padding: 1.2rem 0 0.5rem 0;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 0.5rem 0 0 0;
+    padding: 0;
+    font-size: 0.95rem;
+  }
+  .footer-links a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
   }
 </style>
