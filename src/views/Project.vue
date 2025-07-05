@@ -22,7 +22,7 @@ import image from '../assets/image.png';
             </p>
             <div>
               Live implementation can be found <a href="https://fitness-friends.vercel.app/" style="margin-left: 5px;">here</a>. 
-              Github repository is located <a href="https://github.com/dym-chen/fitness-friends" style="margin-left: 5px;">here</a>
+              Github repository is located <a href="https://github.com/dym-chen/fitness-friends" style="margin-left: 5px;">here</a>.
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@ import image from '../assets/image.png';
               catching accessibility issues early in the development process. 
             </p>
             <div>
-              Github repository is located <a href="https://github.com/dym-chen/PagePatrol" style="margin-left: 5px;">here</a>
+              Github repository is located <a href="https://github.com/dym-chen/PagePatrol" style="margin-left: 5px;">here</a>.
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ import image from '../assets/image.png';
               secure authentication and real-time data sync across devices. 
             </p>
             <div> 
-              Github repository is located <a href="https://github.com/dym-chen/node-drive" style="margin-left: 5px;">here</a>
+              Github repository is located <a href="https://github.com/dym-chen/node-drive" style="margin-left: 5px;">here</a>.
             </div>
           </div>
         </div>
