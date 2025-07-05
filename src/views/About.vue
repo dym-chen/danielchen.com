@@ -8,7 +8,7 @@ import profileImage from '../assets/picture.jpg';
 <template>
   <div class="container">
     <main class="main-content">
-      <div class="horiz">
+      <div class="horizontal">
         <div>
           <p>ABOUT</p>
           <h1>Daniel Chen</h1>
