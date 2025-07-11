@@ -51,12 +51,12 @@ import profileImage from '../assets/picture.jpg';
           <h2>Whats going on with me now?</h2>
           <p>
             Since I will use this website as a place to learn about Vue.JS and sharpen my front-end skills, there will be some time till I have the blog functionality available.
-            In the meanwhile, please check out my posts <a href="https://drive.google.com/drive/folders/18QVK33-DUh6QE_N2nce1e0WQFc5651a8?usp=sharing ">here</a> (I promise its nothing malicious, just a google drive link).
+            In the meanwhile, please check out my posts and my leetcode history <a href="https://drive.google.com/drive/folders/18QVK33-DUh6QE_N2nce1e0WQFc5651a8?usp=sharing ">here</a>. 
           </p>      
       </div>
     </main>
   </div>
-</template>
+</template> 
 
 <style scoped>
 
