@@ -58,10 +58,11 @@ import image from '../assets/image.png';
           <h2 style="margin: auto; text-align: center; font-size: 2.5rem;">NODE <br> DRIVE</h2>
           <div class="vertical"> 
             <p>
-              A personal fitness journey tracking app built with Next.js and Supabase. 
-              Users can log workouts, monitor progress, and visualize their achievements through clean dashboards. 
-              The app combines Next.js for a fast, responsive experience with Supabase for 
-              secure authentication and real-time data sync across devices. 
+              A command-line tool built with Node.js that replicates core features of Google Drive. 
+              Users can upload, download, organize, and manage files and folders directly from the terminal. 
+              The CLI provides intuitive commands for navigating directories, syncing local changes, and managing file versions. 
+              Built with Node.js for portability and speed, the tool offers a lightweight alternative for developers and 
+              power users to interact with cloud storage through a terminal-first experience.
             </p>
             <div> 
               Github repository is located <a href="https://github.com/dym-chen/node-drive" style="margin-left: 5px;">here</a>.
