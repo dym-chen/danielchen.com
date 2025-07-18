@@ -109,4 +109,35 @@ import profileImage from "../assets/picture.jpg";
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 600px) {
+  .main-content {
+    width: 100%;
+    padding: 0.5rem 0.25rem 0 0.25rem;
+    gap: 1rem;
+  }
+  .horizontal {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .circle-container {
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto 0 auto;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  p,
+  li {
+    font-size: 1rem;
+  }
+  ol {
+    padding-left: 1.2rem;
+  }
+}
 </style>
