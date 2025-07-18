@@ -26,12 +26,7 @@ import image from "../assets/image.png";
               authentication and real-time data sync across devices.
             </p>
             <div>
-              Live implementation can be found
-              <a
-                href="https://fitness-friends.vercel.app/"
-                style="margin-left: 5px"
-                >here</a
-              >. Github repository is located
+              Github repository is located
               <a
                 href="https://github.com/dym-chen/fitness-friends"
                 style="margin-left: 5px"
@@ -188,5 +183,36 @@ import image from "../assets/image.png";
   border-radius: 10px;
   border: none;
   margin: 1.5rem 0 0.5rem 0;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    width: 100%;
+    padding: 0.5rem 0.25rem 0 0.25rem;
+    gap: 1rem;
+  }
+  .p-container {
+    width: 100%;
+    gap: 1rem;
+  }
+  .p-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.2rem !important;
+  }
+  p,
+  li {
+    font-size: 1rem;
+  }
+  .line-br {
+    height: 2px;
+    margin: 1rem 0 0.5rem 0;
+  }
 }
 </style>
