@@ -58,10 +58,7 @@ import profileImage from "../assets/picture.jpg";
         <p>POSTS</p>
         <h2>Whats going on with me now?</h2>
         <p>
-          Since I will use this website as a place to learn about Vue.JS and
-          sharpen my front-end skills, there will be some time till I have the
-          blog functionality available. In the meanwhile, please check out my
-          posts and my leetcode history
+          View my blog and leetcode history
           <a
             href="https://drive.google.com/drive/folders/18QVK33-DUh6QE_N2nce1e0WQFc5651a8?usp=sharing "
             >here</a
@@ -118,7 +115,7 @@ import profileImage from "../assets/picture.jpg";
   }
   .horizontal {
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     gap: 1rem;
   }
   .circle-container {

@@ -84,6 +84,7 @@ const experiences = [
   .timeline {
     width: 100%;
     padding: 0 0.25rem;
+    display: none;
   }
   .p-timeline-event-content h3 {
     font-size: 1.1rem;
